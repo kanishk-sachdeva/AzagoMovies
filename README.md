@@ -81,6 +81,10 @@ dependencies {
     
 ## Application Screenshots
 
+```
+All the movie images used in app are just for demo purpose. Not for development commercial purpose
+```
+
 <table style="width:100%">
   <tr>
     <th>Example 1</th>
