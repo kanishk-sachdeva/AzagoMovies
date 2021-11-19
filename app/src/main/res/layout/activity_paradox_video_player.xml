@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".ParadoxVideoPlayer">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:resize_mode="fill"
+        android:background="#000"
+        app:show_timeout="10000"
+        app:controller_layout_id="@layout/custom_playback_control"
+        app:fastforward_increment="10000"
+        app:rewind_increment="10000"
+        android:id="@+id/video_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginStart="3dp"
+                android:id="@+id/azagologo"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:padding="4dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/azagotrycrop" />
+
+            <RelativeLayout
+                android:id="@+id/topbarlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/videoplayerbackbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/back_icon3"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/videonametext"
+                    android:fontFamily="@font/aclonica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/videoplayerbackbtn"/>
+
+                <TextView
+                    android:id="@+id/videodurationtext"
+                    android:layout_marginStart="2dp"
+                    android:layout_below="@id/videonametext"
+                    android:layout_toEndOf="@id/videoplayerbackbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey_active"/>
+
+
+                <LinearLayout
+                    android:id="@+id/topfeatureslayout"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/pip_icon"
+                        android:layout_width="wrap_content"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/pip_icon"/>
+
+
+                    <ImageButton
+                        android:id="@+id/settingsbtn"
+                        android:layout_width="wrap_content"
+                        android:padding="5dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/settingsbtn"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loading"
+            app:lottie_rawRes="@raw/googleprogress"
+            android:layout_width="80dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_height="80dp"
+            android:layout_gravity="center"/>
+    </com.google.android.exoplayer2.ui.PlayerView>
+
+
+</FrameLayout>

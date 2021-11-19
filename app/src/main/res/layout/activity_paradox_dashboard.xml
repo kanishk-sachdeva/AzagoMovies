@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/SimpleTheme"
+    android:background="#000"
+    tools:context=".ParadoxDashboard">
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/toplayout"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Azago Movies"
+                android:visibility="gone"
+                android:layout_alignParentStart="true"
+                android:textColor="#fff"
+                android:fontFamily="@font/aclonica"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:background="@drawable/white_background_stroke"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/azagotrycrop" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bell_icon"
+                android:visibility="gone"
+                android:layout_margin="20dp"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/paradoxframelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toplayout" />
+
+
+        <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+            android:id="@+id/bottom_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rect"
+            android:elevation="8dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/hot_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:bt_active="true"
+                app:bt_badgeBackgroundColor="#f3f3f3"
+                app:bt_colorActive="@color/blue_active"
+                app:bt_colorInactive="@color/default_inactive"
+                app:bt_icon="@drawable/hot_red"
+                app:bt_shape="@drawable/hot_background_stroke"
+                app:bt_title="Hot" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/m_item_photos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                app:bt_colorActive="@color/purple_active"
+                app:bt_colorInactive="@color/default_inactive"
+                app:bt_icon="@drawable/all_icon"
+                app:bt_shape="@drawable/all_background_stroke"
+                app:bt_title="All" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/m_item_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                app:bt_colorActive="@color/green_active"
+                app:bt_colorInactive="@color/default_inactive"
+                app:bt_icon="@drawable/saved_icon"
+                app:bt_shape="@drawable/saved_background_stroke"
+                app:bt_title="Saved Picks" />
+
+        </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/nointernetlayout"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/nointernetlottie"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_width="250dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/nointernet"
+
+                android:layout_height="250dp"/>
+
+            <TextView
+                android:id="@+id/nointernettext"
+                android:layout_below="@+id/nointernetlottie"
+                android:layout_width="wrap_content"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="We are unable to connect to our server\nTry checking your network connection"
+                android:textColor="#fff"/>
+
+            <Button
+                android:id="@+id/buttonforcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nointernettext"
+                android:layout_centerHorizontal="true"
+                android:text="RETRY.."
+                android:clickable="true"
+                android:layout_margin="5dp"
+                android:textColor="@color/red_active"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/emblema_one"
+                android:textSize="18sp"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

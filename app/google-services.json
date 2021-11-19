@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "717929253607",
+    "firebase_url": "https://azagomovies.firebaseio.com",
+    "project_id": "azagomovies",
+    "storage_bucket": "azagomovies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717929253607:android:10f09984c5bd5cbe0e3042",
+        "android_client_info": {
+          "package_name": "com.kanucreator.azagomovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717929253607-0lm16iqv8perklm20f1uo708827j2evs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kanucreator.azagomovies",
+            "certificate_hash": "15e51d12c3f7b65d5220176bf7c2dee356225c2a"
+          }
+        },
+        {
+          "client_id": "717929253607-pcnvnea5sb7b1gbpmf8vg6kg62n11hdh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx6Hi-taYS8G5va-O2-vf3-yEDVbUGPhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717929253607-pcnvnea5sb7b1gbpmf8vg6kg62n11hdh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

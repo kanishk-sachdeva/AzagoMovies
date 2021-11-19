@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AzagoMovies</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

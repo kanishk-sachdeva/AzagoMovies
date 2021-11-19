@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".AboutMovieActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/black"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:titleEnabled="false">
+            <LinearLayout
+                app:layout_collapseParallaxMultiplier="0.7"
+                app:layout_collapseMode="parallax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                    <RelativeLayout
+                        android:id="@+id/posterimagerelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="450dp"
+                        android:background="@mipmap/avengerposter" >
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/backicononclick"
+                            android:layout_marginTop="42dp"
+                            android:layout_width="35dp"
+                            android:layout_marginStart="18dp"
+                            android:layout_height="35dp"
+                            android:src="@drawable/back_icon2"/>
+                    </RelativeLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_bg" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/playicon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/play_icon2"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <androidx.appcompat.widget.Toolbar
+                android:layout_marginTop="35dp"
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/single_product_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nameofmovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/suez_one"
+                android:text="Avengers Endgame"
+                android:textColor="#fff"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    android:id="@+id/ratingbar1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:numStars="10"
+                    android:rating="7.8"
+                    android:isIndicator="true"
+                    style="@style/foodRatingBar"
+                    />
+
+                <TextView
+                    android:id="@+id/ratingtextforabout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/ratingbar1"
+                    android:text="7.8"
+                    android:layout_marginStart="5dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:textColor="@color/blue_active"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="180dp"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/baloo"
+                    android:layout_height="wrap_content"
+                    android:text="WATCH LATER"
+                    android:id="@+id/savevideo"
+                    android:textColor="#fff"
+                    android:background="@drawable/red_gradient"/>
+
+                <Button
+                    android:id="@+id/playmoviebtn"
+                    android:layout_margin="5dp"
+                    android:layout_width="180dp"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/baloo"
+                    android:text="PLAY MOVIE"
+                    android:textColor="#fff"
+                    android:background="@drawable/red_gradient"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/releasetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Release Date : "
+                    android:textStyle="italic"
+                    android:textColor="#f3f3f3"/>
+
+                <TextView
+                    android:id="@+id/releasedatetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/releasetextview"
+                    android:text="23-09-2020"
+                    android:textColor="#f3f3f3"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginEnd="5dp"
+                    android:singleLine="true"
+                    android:id="@+id/genres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#Action, #Thriller"
+                    android:textColor="@color/blue_active"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/linegrey"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey_active"/>
+
+                <RelativeLayout
+                    android:id="@+id/overviewtab"
+                    android:layout_below="@id/linegrey"
+                    android:layout_marginStart="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/redcolorlineforoverview"
+                        android:layout_width="90dp"
+                        android:layout_height="5dp"
+                        android:background="#FF0000"/>
+
+                    <TextView
+                        android:id="@+id/overviewtext"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OVERVIEW"
+                        android:textColor="#fff"
+                        android:layout_below="@id/redcolorlineforoverview"
+                        android:fontFamily="@font/aclonica"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/morelikelayout"
+                    android:layout_toEndOf="@id/overviewtab"
+                    android:layout_below="@id/linegrey"
+                    android:layout_marginStart="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/redcolorlineformorelikethis"
+                        android:layout_width="130dp"
+                        android:layout_height="5dp"
+                        android:background="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/morelikethistext"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MORE LIKE THIS"
+                        android:textColor="@color/grey_active"
+                        android:layout_below="@id/redcolorlineformorelikethis"
+                        android:fontFamily="@font/aclonica"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:id="@+id/overviewlayout1">
+
+                <TextView
+                    android:id="@+id/overviewtextover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:text="To avenge his father's death, a circus entertainer trained in magic and acrobatics turns thief to take down a corrupt bank in Chicago. Two cops from Mumbai are assigned to the case."
+                    android:textColor="#f3f3f3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CAST TEAM"
+                    android:fontFamily="@font/emblema_one"
+                    android:textColor="#fff"
+                    android:layout_marginStart="25dp"
+                    android:padding="10dp"
+                    android:background="@drawable/red_background_stroke"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="25dp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/castrecycler"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/morelikethislayout"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        app:lottie_rawRes="@raw/under_construction"
+                        android:id="@+id/underconstructionanim"
+                        app:lottie_loop="true"
+                        app:lottie_autoPlay="true"/>
+
+                    <TextView
+                        android:layout_below="@id/underconstructionanim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UNDER CONSTRUCTION"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/progressingall"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                app:lottie_rawRes="@raw/circle_fill"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_gravity="center_horizontal"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/allproductsrecycler"
+                android:layout_width="match_parent"
+                android:paddingBottom="90dp"
+                android:clipToPadding="false"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center+"
+                android:layout_below="@id/paradoxframelayout"
+                android:text="This App is Made with love by Kanishk Sachdeva"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
