@@ -87,7 +87,7 @@ dependencies {
     <th>Example 2</th>
   </tr>
   <tr>
-    <td><img src="screenshots/1.gif"/></td>
+    <td><img src="screenshots/dashgif.gif"/></td>
     <td><img src="screenshots/2.jpg"/></td>
   </tr>
   <tr>
