@@ -87,7 +87,7 @@ dependencies {
     <th>Example 2</th>
   </tr>
   <tr>
-    <td><img width="100%" height="auto" src="screenshots/dashgif.gif"/></td>
+    <td><img width="100%" height="auto" src="https://github.com/kanishk-sachdeva/AzagoMovies/tree/master/screenshots/dashgif.gif"/></td>
     <td><img src="screenshots/allmoviespage.jpeg"/></td>
   </tr>
   <tr>
