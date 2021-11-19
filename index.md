@@ -102,7 +102,7 @@ dependencies {
 </table>
 
 <p>
-    <img src="screenshots/playmovie.jpeg"/>
+    <img src="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/screenshots/playmovie.jpeg"/>
     </p>
   
     
