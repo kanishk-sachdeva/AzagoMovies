@@ -74,7 +74,47 @@ dependencies {
 ## Demo Application
 
 <p align="center">
-    <a href="">
-    <img width="250px" height="auto" src="https://cdn.pixabay.com/photo/2013/07/13/01/16/download-155425_1280.png"></img>
+    <a href="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/AzagoMovies.apk">
+        <img width="250px" height="auto" src="https://cdn.pixabay.com/photo/2013/07/13/01/16/download-155425_1280.png"></img>
     </a>
-    </p>
+ </p>
+    
+## Application Screenshots
+
+<table style="width:100%">
+  <tr>
+    <th>Example 1</th>
+    <th>Example 2</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/1.gif"/></td>
+    <td><img src="screenshots/2.jpg"/></td>
+  </tr>
+  <tr>
+    <th>Example 3</th>
+    <th>Example 4</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/3.jpg"/></td>
+    <td><img src="screenshots/4.jpg"/></td>
+  </tr>
+</table>
+    
+    
+# License
+
+```
+    Copyright (C) Kanishk Sachdeva
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+```    
