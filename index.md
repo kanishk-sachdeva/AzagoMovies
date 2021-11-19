@@ -87,16 +87,16 @@ dependencies {
     <th>Example 2</th>
   </tr>
   <tr>
-    <td><img width="100%" height="auto" src="https://github.com/kanishk-sachdeva/AzagoMovies/tree/master/screenshots/dashgif.gif"/></td>
-    <td><img src="screenshots/allmoviespage.jpeg"/></td>
+    <td><img width="100%" height="auto" src="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/screenshots/dashgif.gif"/></td>
+    <td><img src="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/screenshots/allmoviespage.jpeg"/></td>
   </tr>
   <tr>
     <th>Example 3</th>
     <th>Example 4</th>
   </tr>
   <tr>
-    <td><img src="screenshots/aboutmovie.jpeg"/></td>
-    <td><img src="screenshots/aboutmovie2.jpeg"/></td>
+    <td><img src="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/screenshots/aboutmovie.jpeg"/></td>
+    <td><img src="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/screenshots/aboutmovie2.jpeg"/></td>
   </tr>
   
 </table>
