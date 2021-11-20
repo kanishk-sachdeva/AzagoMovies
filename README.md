@@ -8,8 +8,46 @@
 🎥 <b>AzagoMovies</b> is an android streaming application for <i>movies, web series and tv shows</i> such as Netflix, Zee5 and many much.
 <br><br>This app is built in <strong>Android Studio</strong> using <i>ExoPlayer, Firebase and Bubble Navigation(for navbar)</i>
 
-## Gradle
+## Demo Application
 
+<p align="center">
+    <a href="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/AzagoMovies.apk">
+        <img width="250px" height="auto" src="https://cdn.pixabay.com/photo/2013/07/13/01/16/download-155425_1280.png"></img>
+    </a>
+ </p>
+    
+## Application Screenshots
+
+```
+All the movie images used in app are just for demo purpose. Not for development commercial purpose
+```
+
+<table style="width:100%">
+  <tr>
+    <th>Example 1</th>
+    <th>Example 2</th>
+  </tr>
+  <tr>
+    <td><img width="100%" height="auto" src="screenshots/dashgif.gif"/></td>
+    <td><img src="screenshots/allmoviespage.jpeg"/></td>
+  </tr>
+  <tr>
+    <th>Example 3</th>
+    <th>Example 4</th>
+  </tr>
+  <tr>
+    <td><img src="screenshots/aboutmovie.jpeg"/></td>
+    <td><img src="screenshots/aboutmovie2.jpeg"/></td>
+  </tr>
+  
+</table>
+
+<p>
+    <img src="screenshots/playmovie.jpeg"/>
+    </p>
+  
+    
+## Gradle
 ```
 android {
     compileSdkVersion 30
@@ -71,45 +109,6 @@ dependencies {
 }
 ```
 
-## Demo Application
-
-<p align="center">
-    <a href="https://github.com/kanishk-sachdeva/AzagoMovies/raw/master/AzagoMovies.apk">
-        <img width="250px" height="auto" src="https://cdn.pixabay.com/photo/2013/07/13/01/16/download-155425_1280.png"></img>
-    </a>
- </p>
-    
-## Application Screenshots
-
-```
-All the movie images used in app are just for demo purpose. Not for development commercial purpose
-```
-
-<table style="width:100%">
-  <tr>
-    <th>Example 1</th>
-    <th>Example 2</th>
-  </tr>
-  <tr>
-    <td><img width="100%" height="auto" src="screenshots/dashgif.gif"/></td>
-    <td><img src="screenshots/allmoviespage.jpeg"/></td>
-  </tr>
-  <tr>
-    <th>Example 3</th>
-    <th>Example 4</th>
-  </tr>
-  <tr>
-    <td><img src="screenshots/aboutmovie.jpeg"/></td>
-    <td><img src="screenshots/aboutmovie2.jpeg"/></td>
-  </tr>
-  
-</table>
-
-<p>
-    <img src="screenshots/playmovie.jpeg"/>
-    </p>
-  
-    
     
 # License
 
